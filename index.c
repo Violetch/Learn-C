@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <cmath>
-#include <iostream>
+#include <math.h>
 
 // int main() {
 //     int number = 10;
@@ -69,21 +68,6 @@
 
 //     printf("Luas lingkaran dengan jari-jari %.2f adalah: %.2f\n", r, luas);
 
-//     return 0;
-// }
-
-// int main () {
-//     int i;
-//     for (i = 0; i < 10; i++) {
-//         printf("%d\n", i);
-//     }
-
-//     while(i = 0 < 10) {
-//         printf("%d\n", i);
-//         i++;
-//     }
-    
-    
 //     return 0;
 // }
 
@@ -303,3 +287,59 @@
 
 //     return 0;
 // }
+
+int main() {
+    int number;
+    printf("Masukkan angka: ");
+    scanf("%d", &number);
+
+    if(number > 0) {
+        printf("%d bilangan positif\n", number);
+    } else if(number == 0) {
+        printf("%d bilangan netral\n", number);
+    } else if(number < 0) {
+        printf("%d bilangan negatif\n", number);
+    } else {
+        printf("Tolong masukkan angka\n");
+    };
+
+    return 0;
+}
+
+// int main() {
+//     int i;
+//     for (i = 1; i <= 10; i++) {
+//         printf("Angka ke-%d\n", i);
+//     }
+
+//     return 0;
+// }
+
+// int main() {
+//     int i = 1;
+//     int a;
+
+//     printf("Masukkan angka maximal: ");
+//     scanf("%d", &a);
+
+//     while(i <= a) {
+//         printf("Angka ke-%d\n", i);
+//         i++;
+//     }
+
+//     return 0;
+// }
+
+// int main() {
+//     int i = 1;
+//     do{
+//         printf("Tebak angka: ");
+//         scanf("%d", &i);
+//         if(i != 7) {
+//             printf("Tebakan mu salah coba lagi\n");
+//         };
+//     } while (i != 7);
+//     printf("Selamat tebakan anda benar");
+
+//     return 0;
+// }   
