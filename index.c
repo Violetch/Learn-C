@@ -288,23 +288,23 @@
 //     return 0;
 // }
 
-int main() {
-    int number;
-    printf("Masukkan angka: ");
-    scanf("%d", &number);
+// int main() {
+//     int number;
+//     printf("Masukkan angka: ");
+//     scanf("%d", &number);
 
-    if(number > 0) {
-        printf("%d bilangan positif\n", number);
-    } else if(number == 0) {
-        printf("%d bilangan netral\n", number);
-    } else if(number < 0) {
-        printf("%d bilangan negatif\n", number);
-    } else {
-        printf("Tolong masukkan angka\n");
-    };
+//     if(number > 0) {
+//         printf("%d bilangan positif\n", number);
+//     } else if(number == 0) {
+//         printf("%d bilangan netral\n", number);
+//     } else if(number < 0) {
+//         printf("%d bilangan negatif\n", number);
+//     } else {
+//         printf("Tolong masukkan angka\n");
+//     };
 
-    return 0;
-}
+//     return 0;
+// }
 
 // int main() {
 //     int i;
@@ -343,3 +343,75 @@ int main() {
 
 //     return 0;
 // }   
+
+// int main () {
+//     int i, max;
+
+//     printf("Masukkan max angka: ");
+//     scanf("%d", &max);
+
+//     for (i = 1; i <= max; i++)  
+//     {
+//         if(i % 2 != 0) {
+//             printf("%d adalah bilangan ganjil\n", i);
+//         } else {
+//             printf("%d adalah bilangan genap\n", i);
+//         }
+//     }
+// }
+
+// int main() {
+//     int tinggi_badan, berat_badan;
+
+//     printf("Tinggi badan: ");
+//     scanf("%d", &tinggi_badan);
+
+//     printf("Berat badan: ");
+//     scanf("%d", &berat_badan);
+
+//     int selisih_tb = tinggi_badan - berat_badan;
+
+//     if(selisih_tb > 120) {
+//         printf("Kegemukan\n");
+//     } else if(selisih_tb > 100 && selisih_tb < 120 ) {
+//         printf("Ideal\n");
+//     } else {
+//         printf("Kurus\n");
+//     }
+// }
+
+int main() {
+    char operator;
+    int a, b;
+
+    printf("Operand A: ");
+    scanf("%d", &a);
+
+    printf("Chose operator between +,-,*,/: ");
+    scanf(" %c", &operator);
+
+    printf("Operand B: ");
+    scanf("%d", &b);
+
+    switch(operator) {
+        case '+':
+            printf("%d + %d = %d\n", a,b,a+b);
+            break;
+        case '-':
+            printf("%d - %d = %d\n", a,b,a-b);
+            break;
+        case '*':
+            printf("%d x %d = %d\n", a,b,a*b);
+            break;
+        case '/':
+            if(b != 0) {
+            printf("%d / %d = %d\n", a,b,a/b);
+
+            } else {
+                printf("Divisor cannot be 0\n");
+            }
+            break;
+        default:
+            printf("");
+    }
+}
