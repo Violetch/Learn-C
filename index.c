@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 #include <math.h>
 
@@ -17,7 +18,7 @@
 
 // int main() {
 //     double angka, pangkat;
-    
+
 //     printf("Masukkan angka: ");
 //     scanf("%lf", &angka);
 
@@ -71,7 +72,6 @@
 //     return 0;
 // }
 
-
 // int main() {
 //     char name[30];
 //     char nrp[30];
@@ -85,10 +85,9 @@
 //     printf("\n");
 //     printf("Your name: %s", name);
 //     printf("Your nrp: %s\n", nrp);
-    
+
 //     return 0;
 // }
-
 
 // int main() {
 //     int var_bulat = 32767;
@@ -126,41 +125,41 @@
 
 // int main() {
 //     long juml_uang = 189000;
-    
+
 //     // Output
 //     std::cout << "Jumlah uang dalam Rupiah: " << juml_uang << std::endl;
 //     std::cout << "Pecahan uang yang dibutuhkan:" << std::endl;
-    
+
 //     // Pecahan 100000
 //     int ratusanribu = juml_uang / 100000;
 //     juml_uang %= 100000;
 //     std::cout << "100000: " << ratusanribu << " Lembar" << std::endl;
-    
+
 //     // Pecahan 50000
 //     int limapulhribu = juml_uang / 50000;
 //     juml_uang %= 50000;
 //     std::cout << "50000: " << limapulhribu << " Lembar" << std::endl;
-    
+
 //     // Pecahan 20000
 //     int duapulhribu = juml_uang / 20000;
 //     juml_uang %= 20000;
 //     std::cout << "20000: " << duapulhribu << " Lembar" << std::endl;
-    
+
 //     // Pecahan 10000
 //     int sepuluhribu = juml_uang / 10000;
 //     juml_uang %= 10000;
 //     std::cout << "10000: " << sepuluhribu << " Lembar" << std::endl;
-    
+
 //     // Pecahan 5000
 //     int limaribu = juml_uang / 5000;
 //     juml_uang %= 5000;
 //     std::cout << "5000: " << limaribu << " Lembar" << std::endl;
-    
+
 //     // Pecahan 2000
 //     int duaribu = juml_uang / 2000;
 //     juml_uang %= 2000;
 //     std::cout << "2000: " << duaribu << " Lembar" << std::endl;
-    
+
 //     // Sisa uang
 //     if (juml_uang > 0) {
 //         std::cout << "Sisa uang yang tidak bisa dibagi: " << juml_uang << " Rupiah" << std::endl;
@@ -171,7 +170,7 @@
 
 // int main() {
 //     int a = 12, b = 2, c = 3, d = 4;
-    
+
 //     std::cout << "a + b = " << a + b << std::endl;
 //     std::cout << "a - b = " << a - b << std::endl;
 //     std::cout << "a * b = " << a * b << std::endl;
@@ -185,7 +184,7 @@
 // int main() {
 //     double a, b, c;
 //     double diskriminan;
-    
+
 //     // Input nilai a, b, dan c
 //     std::cout << "Masukkan nilai a: ";
 //     std::cin >> a;
@@ -193,13 +192,13 @@
 //     std::cin >> b;
 //     std::cout << "Masukkan nilai c: ";
 //     std::cin >> c;
-    
+
 //     // Menghitung diskriminan
 //     diskriminan = (b * b) - (4 * a * c);
-    
+
 //     // Menampilkan hasil
 //     std::cout << "Diskriminan dari persamaan kuadrat adalah: " << diskriminan << std::endl;
-    
+
 //     return 0;
 // }
 
@@ -220,7 +219,7 @@
 //     char karakter;
 
 //     printf("Masukkan sebuah karakter: ");
-//     scanf(" %c", &karakter); 
+//     scanf(" %c", &karakter);
 
 //     printf("Karakter yang Anda masukkan adalah: %c\n", karakter);
 
@@ -231,24 +230,24 @@
 //     float gaji_pokok, total_gaji;
 //     int jam_kerja_harian;
 //     float tunjangan_istri_suami, tunjangan_anak, thr, tunjangan_transport, polis_asuransi;
-    
+
 //     printf("Masukkan gaji pokok: ");
 //     scanf("%f", &gaji_pokok);
-    
+
 //     printf("Masukkan jam kerja per hari (dalam jam): ");
 //     scanf("%d", &jam_kerja_harian);
-    
-//     tunjangan_istri_suami = 0.10 * gaji_pokok; 
-//     tunjangan_anak = 0.05 * gaji_pokok; 
+
+//     tunjangan_istri_suami = 0.10 * gaji_pokok;
+//     tunjangan_anak = 0.05 * gaji_pokok;
 //     thr = 5000;
-//     tunjangan_transport = 3000 * (jam_kerja_harian * 30);     
+//     tunjangan_transport = 3000 * (jam_kerja_harian * 30);
 
 //     polis_asuransi = 20000;
-    
-//     float pajak = 0.15 * (tunjangan_istri_suami + tunjangan_anak); 
-    
+
+//     float pajak = 0.15 * (tunjangan_istri_suami + tunjangan_anak);
+
 //     float pendapatan_kotor = gaji_pokok + tunjangan_istri_suami + tunjangan_anak + thr + tunjangan_transport;
-    
+
 //     total_gaji = pendapatan_kotor - pajak - polis_asuransi;
 
 //     printf("\n==== Rincian Pendapatan ====\n");
@@ -266,10 +265,10 @@
 // }
 
 // int main() {
-//     int total_tiket; 
-//     int tiket_dibayar;  
-//     int tiket_bonus; 
-//     int sisa_tiket; 
+//     int total_tiket;
+//     int tiket_dibayar;
+//     int tiket_bonus;
+//     int sisa_tiket;
 
 //     printf("Masukkan jumlah tiket yang ingin dibeli: ");
 //     scanf("%d", &total_tiket);
@@ -342,7 +341,7 @@
 //     printf("Selamat tebakan anda benar");
 
 //     return 0;
-// }   
+// }
 
 // int main () {
 //     int i, max;
@@ -350,7 +349,7 @@
 //     printf("Masukkan max angka: ");
 //     scanf("%d", &max);
 
-//     for (i = 1; i <= max; i++)  
+//     for (i = 1; i <= max; i++)
 //     {
 //         if(i % 2 != 0) {
 //             printf("%d adalah bilangan ganjil\n", i);
@@ -380,38 +379,82 @@
 //     }
 // }
 
-int main() {
-    char operator;
-    int a, b;
+// int main()
+// {
+//     char operator;
+//     char confirmation[10];
+//     int a, b;
 
-    printf("Operand A: ");
-    scanf("%d", &a);
+//     do
+//     {
+//         printf("Welcome to my simple calculator, type 'in' to continue type 'quit' to exit: ");
+//         scanf("%s", confirmation);
 
-    printf("Chose operator between +,-,*,/: ");
-    scanf(" %c", &operator);
+//         if (strcmp(confirmation, "in") == 0)
+//         {
+//             printf("Operand A: ");
+//             scanf("%d", &a);
 
-    printf("Operand B: ");
-    scanf("%d", &b);
+//             printf("Chose operator between +,-,*,/: ");
+//             scanf(" %c", &operator);
 
-    switch(operator) {
-        case '+':
-            printf("%d + %d = %d\n", a,b,a+b);
-            break;
-        case '-':
-            printf("%d - %d = %d\n", a,b,a-b);
-            break;
-        case '*':
-            printf("%d x %d = %d\n", a,b,a*b);
-            break;
-        case '/':
-            if(b != 0) {
-            printf("%d / %d = %d\n", a,b,a/b);
+//             printf("Operand B: ");
+//             scanf("%d", &b);
 
-            } else {
-                printf("Divisor cannot be 0\n");
-            }
-            break;
-        default:
-            printf("");
-    }
-}
+//             switch (operator)
+//             {
+//             case '+':
+//                 printf("%d + %d = %d\n", a, b, a + b);
+//                 break;
+//             case '-':
+//                 printf("%d - %d = %d\n", a, b, a - b);
+//                 break;
+//             case '*':
+//                 printf("%d x %d = %d\n", a, b, a * b);
+//                 break;
+//             case '/':
+//                 if (b != 0)
+//                 {
+//                     printf("%d / %d = %d\n", a, b, a / b);
+//                 }
+//                 else
+//                 {
+//                     printf("Divisor cannot be 0\n");
+//                 }
+//                 break;
+//             default:
+//                 printf("Select the appropriate operator\n");
+//             }
+//         }
+//     } while (strcmp(confirmation, "exit") != 0);
+//     printf("Thank you for trying");
+
+//     return 0;
+// }
+
+// int main()
+// {
+//     int number;
+//     int status;
+
+//     do
+//     {
+//         printf("Guess what number is: ");
+//         status = scanf("%d", &number);
+
+//         if (status != 1)
+//         {
+//             printf("Input must be number! try again.\n");
+//             while (getchar() != '\n')
+//                 ;
+//             continue;
+//         }
+
+//         while (getchar() != '\n')
+//             ;
+
+//     } while (number != 3);
+
+//     printf("Congratulation, your guess is right!\n");
+//     return 0;
+// }
